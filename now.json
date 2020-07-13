@@ -1,8 +1,8 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(?:(?!(en|de)/?))(.*)", "status": 301, "dest": "/de/$1" },
-    { "src": "/(en|de)/(.*)", "status": 404, "dest": "/$1/404/index.html" },
-    { "src": "/(.*)", "status": 404, "dest": "/de/404/index.html" }
+    { "src": "/(?:(?!(en|de)/?))(.*)", "status": 301, "dest": "/de/$2" },
+    { "src": "/(en|de)/(.*)", "status": 404, "dest": "/$1/404.html" },
+    { "src": "/(.*)", "status": 404, "dest": "/de/404.html" }
   ]
 }
